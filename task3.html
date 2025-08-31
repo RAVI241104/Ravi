@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(../images/553587.jpg);
+      background-size:150%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 40px;
+      text-align: left;
+      
+    }
+    h2{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .cards{
+      width: 100%;
+    }
+    .card{
+      width: 300px;
+      float: left;
+      margin: 0 20px 20px 100px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px black;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card-top{
+      height: 150px;
+    }
+    .yellow{background-color: rgb(51, 23, 211);}
+    .purple{background-color: white;}
+    .green{background-color: rgb(193, 32, 177);}
+
+    .card-content{
+      padding: 15px;
+      background-color:bisque;
+      height: 110px;
+    }
+    .card-content h3{
+      margin: 0 0 8px;
+      font-size: 15px;
+      
+    }
+    
+    .card-content p{
+
+      font-size: 15px;
+      text-align: center;
+      
+    }
+    .badge{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: black;
+      color: antiquewhite;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px black;
+      z-index: 10;
+      text-align: center;
+      
+
+    }
+    .offer{
+      position: absolute;
+      top: 2px;
+      right: 40px;
+      background: black;
+      color: antiquewhite;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 12px;
+      width:260px;
+      box-shadow: 0 4px 15px black;
+
+    }
+    .offer strong{
+      display: block;
+      margin-bottom: 5px;
+    }
+    .card::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .card-content1{
+      background-color: navajowhite;
+      padding: 15px;
+    }
+    .re{
+      background-color: khaki;
+      padding: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>product cart  - float   + z-index</h2>
+  <div class="offer">
+    <strong>offer</strong>
+    get float $500 off on your first oder.use code <b>FIRST500</b>
+  </div>
+  <div class="cards">
+
+  <div class="card">
+  <div class="card-top yellow" style="background-image:url(../images/OIP.webp);background-position: center;background-size: cover;"></div>
+  <div class="card-content1">
+    <h3>eco water bottle</h3>
+    <p>Leak-proof,BPA-free bottle for everyday use. Capacity 1L</p>
+    </div>
+    </div>
+
+    <div class="card" style="position: relative;">
+    <div class="card-top purple" style="background-image: url(../images/OIP.jpeg); background-position:50%;background-size: 40%;background-repeat: no-repeat;"></div>
+      <span class="badge">pro</span>
+      <div class="re">
+        <h3>Noice-Cancelling Headset</h3>
+        <p>Over-ear comfort with clear mic and passive noice isolation</p>
+        </div>
+        </div>
+
+      <div class="card">
+      <div class="card-top green" style="background-image: url(../images/Desk\ Organize.jpg);background-position: center;"></div>
+        <div class="card-content">
+          <h3>Desk Organize</h3>
+          <p>Keep pens,notes and caples tidy with this compact unit</p>
+          </div>
+          </div>
+    </div>
+
+    
+</body>
+</html>
